@@ -149,7 +149,7 @@ function handleClickListner(e){
     // console.log(target.parentElement.id);
 
     if(target.id === 'favorites'){
-        window.location = 'appmealsrk/favorites.html';
+        window.location = 'favorites.html';
     }
     if(target.className === 'fab' || target.parentElement.className === 'fab'){
         addToFav(target.parentElement.id);
@@ -157,7 +157,7 @@ function handleClickListner(e){
     }
     else if(target.parentElement.className ==='text' || target.parentElement.className ==='image'){
         //go to meal detail
-        window.location = 'appmealsrk/meal-detail.html?id=' + target.parentElement.id;
+        window.location = 'meal-detail.html?id=' + target.parentElement.id;
     }
 }
 
