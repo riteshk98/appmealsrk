@@ -9,7 +9,7 @@ function loadFromLocalStorage(){
 }
 
 function fetchMeal(id){
-    fetch(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
     .then(function(resp){
         console.log(resp);
         return resp.json();
